@@ -36,6 +36,6 @@ st.plotly_chart(fig_risk_return)
 # 对比表格
 st.subheader("📋 Strategy Metrics Table")
 st.dataframe(df.set_index("Strategy").style.format({
-    "Return": "{:.2f}",
-    "Volatility": "{:.2f}"
+    "Return (%)": "{:.2f}",
+    "Volatility (%)": "{:.2f}"
 }))
