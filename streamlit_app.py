@@ -15,7 +15,7 @@ weights_file = f"results/weights_{strategy.lower().replace(' ', '_')}.csv"
 try:
     weights_df = pd.read_csv(weights_file)
     st.subheader(f"📈 Allocation Weights — {strategy}")
-    fig_pie = px.pie(weights_df, names='Ticker', values='Weight', title='Weight Distribution')
+    fig_pie = px.pie(weights_df, names='Asset', values='Weight', title='Weight Distribution')
     st.plotly_chart(fig_pie)
 except FileNotFoundError:
     st.warning("⚠️ Weight file not found. Please make sure it exists.")
