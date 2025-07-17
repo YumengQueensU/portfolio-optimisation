@@ -11,7 +11,7 @@ st.title("📊 Portfolio Strategy Comparison Dashboard")
 strategy = st.selectbox("Select a Strategy", df['Strategy'])
 
 # 权重饼图（从单独的文件中读取）
-weights_file = f"results/{strategy.lower().replace(' ', '_')}_weights.csv"
+weights_file = f"results/weights_{strategy.lower().replace(' ', '_')}.csv"
 try:
     weights_df = pd.read_csv(weights_file)
     st.subheader(f"📈 Allocation Weights — {strategy}")
