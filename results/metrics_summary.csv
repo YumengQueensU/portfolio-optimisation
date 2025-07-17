@@ -1,0 +1,9 @@
+Strategy,Return,Volatility
+Markowitz,0.0586,0.1014
+Risk Parity,0.0465,0.1095
+Lasso,0.0009,0.1103
+Random Forest,0.0019,0.1033
+XGBoost,0.0016,0.1554
+MLP,0.0036,0.1144
+LSTM,0.0389,0.1179
+GRU,0.0711,0.1076
